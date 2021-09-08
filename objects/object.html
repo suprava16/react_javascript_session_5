@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var obj={
+      fname:"suprava",
+      lname:"padhi",
+      age:26,
+      email:"suprava@gmail.com",
+      hobbies:["singing","dancing","crafting"],
+      fullname: function(){
+        // console.log(this)
+        return this.fname
+      },
+      // fullname:()=>{
+      //   // console.log(this)
+      //   return this.fname
+      // }
+      address:{
+        city:"bbsr",
+        state:"odisha"
+        
+      }
+    }
+    document.write(obj.fname +" "+obj.lname);
+    // console.log(obj);
+    document.write("<br>");
+    document.write(obj.hobbies[0] +" "+obj.hobbies[1]);
+    document.write("<br>");
+    document.write(obj.fullname());
+    document.write("<br>");
+    document.write(obj.address.state)
+
+  </script>
+</body>
+</html>
